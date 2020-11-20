@@ -37,7 +37,7 @@
                         echo "</div>";
                         echo "<div class='card-footer'>";
                             echo "<button class='btn btn-dark'>";
-                                echo "<a href='Article.php?id=".$row["id"]."&name=".$row["name"]."&descripcio=".$row["preu"]."&preu=".$row["descripcio"]."'>Detalls</a>";
+                                echo "<a href='Article.php?id=".$row["id"]."&name=".$row["name"]."&preu=".$row["preu"]."&descripcio=".$row["descripcio"]."'>Detalls</a>";
                             echo "</button>";
                         echo "</div>";
                     echo "</div>";

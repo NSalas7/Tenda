@@ -28,32 +28,16 @@
         while($row = $result -> fetch_assoc()){
         ?>
 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner" style="width: 35%; position: absolute;>
-	            <div class="carousel-item active">
-                    <img src="../SASS/<?php echo $row['id'];?>.jpg" class="d-block w-100" alt="<?php echo $row['name']; ?>">
-                </div>
-                <div class="carousel-item">
-                    <img src="../SASS/<?php echo $row['id'];?>-1.jpg" class="d-block w-100" alt="<?php echo $row['name']; ?>-1">
-                </div>
-                <div class="carousel-item">
-                    <img src="../SASS/<?php echo $row['id'];?>-2.jpg" class="d-block w-100" alt="<?php echo $row['name']; ?>-2">
-                </div>
-            </div>
+        <div>
+            <img src="../SASS/<?php echo $row['id'];?>.jpg" class="d-block w-100" alt="<?php echo $row['name']; ?>">
         </div>
+
     <div style="float: right; max-width: 55%; margin-left: 250px; margin-top: 20px; " class="col-sm-8">
         <h1 class ="card-title"><?php echo $row['name']; ?></h1>
         <h3 class ="card-text"><?php echo $row['descripcio']; ?></h3>
         <h3 class ="card-text">PREU : <?php echo $row['preu']; ?> €</h3>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev" style="margin-left: -60px;">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next" style="margin-right: 580px;">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+
 </div>
 
 
